@@ -1,0 +1,127 @@
+/* responsive mobile */
+@media (max-width: 739px) {
+  .mobile-header-nav-toggle {
+    display: none;
+  }
+
+  .mobile-nav-icon-toggle {
+    display: block;
+  }
+
+  .mobile-banner-margin-top {
+    margin: 12rem auto 0;
+  }
+
+  .mobile-banner-toggle-width {
+    width: 100vw;
+    height: 30rem;
+  }
+
+  body {
+    padding: 0 5px;
+  }
+
+  .mobile-o-1 {
+    margin-left: 8.33333%;
+  }
+
+  .mobile-image-toggle {
+    width: 50vw;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .mobile-info-toggle-margin,
+  .mobile-female-toggle-margin {
+    margin-top: 90px !important;
+  }
+
+  .mobile-toggle-padding {
+    padding: 20px 0 0 15px;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .mobile-toggle-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-add-padding {
+    padding: 5px 0;
+  }
+
+  .mobile-female-toggle-width {
+    max-width: 300px;
+  }
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+  .mobile-onFemale-hide-toggle {
+    display: none;
+  }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+  .mobile-onFemale-hide-toggle {
+    display: inline;
+  }
+}
+
+/* table pc */
+@media (min-width: 740px) {
+  .mobile-nav-icon-toggle {
+    display: none;
+  }
+
+  .mobile-banner-margin-top {
+    margin: 15rem auto 0;
+  }
+
+  .mobile-sale50-toggle-height {
+    height: 450px;
+  }
+
+  .mobile-info-toggle-margin {
+    margin-top: 130px;
+  }
+
+  .mobile-female-toggle-margin {
+    margin-top: 160px !important;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  .mobile-toggle-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* PC medium */
+@media (min-width: 1240px) {
+  .mobile-banner-toggle-width {
+    width: 1200px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .mobile-banner-toggle-width {
+    width: 644px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+  .mobile-banner-toggle-width {
+    width: 984px;
+  }
+}
