@@ -38,5 +38,5 @@ setInterval(() => {
     count = 0;
     $(".header__banner .header__banner-list").style.marginLeft = `${count}%`;
   }
-}, 5000);
+}, 8000);
 // Bật tắt modal Login

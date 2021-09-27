@@ -62,7 +62,73 @@ $height-nav: 8rem;
     display: flex;
     flex-direction: row;
     line-height: $height-nav;
-    &-search i {
+    &-search {
+      position: relative;
+      &:hover .box-search {
+        display: block;
+      }
+      .box-search {
+        position: absolute;
+        display: none;
+        height: 10rem;
+        width: 25rem;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        top: 85%;
+        .group-search {
+          padding-left: 3rem;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          // transform: translate(-50%, -50%);
+          // display: inline-block;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            z-index: 2;
+            transform: rotate(45deg);
+            border-radius: 3px;
+            left: 2rem;
+            top: -1.8rem;
+          }
+          input {
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            // // display: none;
+            padding: 5px 10px;
+            outline: none;
+          }
+          i {
+            padding: 1rem;
+            font-size: 1rem;
+            background-color: #cb231f;
+            color: #fff;
+
+            margin-left: -3px;
+            border-radius: 0 3px 3px 0;
+            &:hover {
+              cursor: pointer;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+      // input {
+      //   position: absolute;
+      //   top: 50%;
+      //   transform: translateY(-60%);
+      //   left: -160px;
+      //   display: none;
+      //   padding: 5px 10px;
+      //   outline: none;
+      // }
+    }
+    &-search > i {
       color: #cbcccc;
       padding: 1.6rem;
       font-size: 1.5rem;
@@ -116,7 +182,7 @@ $height-nav: 8rem;
   top: $height-nav;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .header__menu {
@@ -128,7 +194,7 @@ $height-nav: 8rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    &-items a {
+    &-items > a {
       color: #000;
       line-height: 5rem;
       font-size: 1.5rem;
@@ -151,18 +217,24 @@ $height-nav: 8rem;
         display: none;
         position: absolute;
         border: 2px solid #ccc;
-        // box-shadow: 0 0.1rem 0.5rem 0 #ccc;
         border-radius: 0.5rem;
         background-color: #fff;
-        &-items a {
-          text-transform: capitalize;
-          padding: 0 10rem 0 2rem;
-          font-weight: 400;
-          color: #7d7d7c;
+        &-items {
           &:hover {
             border: none;
             background-color: #f7f7f7;
-            color: #c30106;
+            cursor: pointer;
+          }
+          &:hover a {
+            color: #cb231f;
+          }
+          a {
+            line-height: 5rem;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding: 0 10rem 0 2rem;
+            color: #7d7d7c;
           }
         }
       }
@@ -1058,6 +1130,7 @@ $height-nav: 8rem;
       .page {
         display: flex;
         justify-content: center;
+        margin-bottom: 3rem;
         div {
           font-size: 1.6rem;
           font-weight: 500;
@@ -1214,12 +1287,10 @@ $height-nav: 8rem;
 }
 
 .content-contact {
-  max-width: 120rem;
   margin: 7rem auto 5rem;
   .ontop {
-    display: flex;
-    justify-content: space-between;
     .content__contact-info {
+      margin-bottom: 3rem;
       .address {
         font-size: 1.6rem;
         color: #454545;
@@ -1265,20 +1336,20 @@ $height-nav: 8rem;
     }
 
     .content__sendInfo {
-      max-width: 60rem;
+      .row {
+        .row {
+          padding: 0 0 1rem 1rem;
+        }
+      }
       input,
       textarea {
-        width: 28rem;
-        margin: 0 0 1rem 1rem;
         font-size: 1.6rem;
         padding: 1rem;
         outline: none;
         border: 1px solid #ccc;
       }
       textarea {
-        width: 57.2rem;
-        max-width: 57.2rem;
-        height: 15rem;
+        height: 20rem;
       }
       button {
         text-transform: uppercase;

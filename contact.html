@@ -50,6 +50,12 @@
 
                 <div class="header__nav-list">
                   <div class="header__nav-list-search mobile-header-nav-toggle">
+                    <div class="box-search">
+                      <div class="group-search">
+                        <input type="text" placeholder="Tìm kiếm..." />
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
                     <i class="fas fa-search"></i>
                   </div>
 
@@ -157,7 +163,7 @@
       </header>
 
       <div class="contact__content header__info">
-        <div class="header__info-image">
+        <div class="header__info-image mobile-info-toggle-margin">
           <div class="opacity"></div>
           <div class="text">
             <h2>Liên hệ</h2>
@@ -167,62 +173,105 @@
         </div>
 
         <div class="content-contact">
-          <div class="ontop">
-            <div class="content__contact-info">
-              <div class="address">
-                <h2 class="title">Thông tin liên hệ</h2>
-                <p class="address__line1">
-                  <i class="fas fa-map-marker-alt"></i>
-                  Xâm Hồng, Thắng Lợi, Văn Giang, Hưng Yên
-                </p>
-                <p class="address__line2">
-                  <i class="fas fa-phone-square-alt"></i>
-                  0379 833 106
-                </p>
-                <p class="address__line3">
-                  <i class="fas fa-envelope"></i>
-                  Beatboxlkt@gmail.com
-                </p>
-                <p class="address__line4">
-                  <i class="fab fa-skype"></i>
-                  LongKaito
-                </p>
+          <div class="ontop grid wide">
+            <div class="row">
+              <div class="content__contact-info col l-6 m-6 c-12">
+                <div class="address">
+                  <h2 class="title">Thông tin liên hệ</h2>
+                  <p class="address__line1">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Xâm Hồng, Thắng Lợi, Văn Giang, Hưng Yên
+                  </p>
+                  <p class="address__line2">
+                    <i class="fas fa-phone-square-alt"></i>
+                    0379 833 106
+                  </p>
+                  <p class="address__line3">
+                    <i class="fas fa-envelope"></i>
+                    Beatboxlkt@gmail.com
+                  </p>
+                  <p class="address__line4">
+                    <i class="fab fa-skype"></i>
+                    LongKaito
+                  </p>
+                </div>
+
+                <div class="socialNetwork">
+                  <div class="socialNetwork__box"></div>
+                  <a href="">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram-square"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-pinterest-square"></i>
+                  </a>
+                  <a href="">
+                    <i class="fas fa-rss-square"></i>
+                  </a>
+                </div>
               </div>
 
-              <div class="socialNetwork">
-                <div class="socialNetwork__box"></div>
-                <a href="">
-                  <i class="fab fa-facebook"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-instagram-square"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-twitter-square"></i>
-                </a>
-                <a href="">
-                  <i class="fab fa-pinterest-square"></i>
-                </a>
-                <a href="">
-                  <i class="fas fa-rss-square"></i>
-                </a>
+              <div class="content__sendInfo col l-6 m-6 c-12">
+                <div class="row">
+                  <div class="col l-6 m-6 c-11">
+                    <div class="row">
+                      <input
+                        type="text"
+                        class="col l-12 m-12 c-12"
+                        placeholder="Họ và tên"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-6 m-6 c-11">
+                    <div class="row">
+                      <input
+                        type="text"
+                        class="col l-12 m-12 c-12"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-6 m-6 c-11">
+                    <div class="row">
+                      <input
+                        type="text"
+                        class="col l-12 m-12 c-12"
+                        placeholder="Số điện thoại"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-6 m-6 c-11">
+                    <div class="row">
+                      <input
+                        type="text"
+                        class="col l-12 m-12 c-12"
+                        placeholder="Địa chỉ"
+                      />
+                    </div>
+                  </div>
+                  <div class="col l-12 m-12 c-11">
+                    <div class="row">
+                      <textarea
+                        class="col l-12 m-12 c-12"
+                        placeholder="Lời nhắn"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button>Gửi</button>
+                </div>
               </div>
-            </div>
-
-            <div class="content__sendInfo">
-              <input type="text" placeholder="Họ và tên" />
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Số điện thoại" />
-              <input type="text" placeholder="Địa chỉ" />
-              <textarea placeholder="Lời nhắn"></textarea>
-              <button>Gửi</button>
             </div>
           </div>
 
           <div class="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4358.606147787288!2d105.90191277729024!3d20.89857286818428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135b1dd3483ea93%3A0x6c18ca6b6f088a3b!2zROG7sWMgT2FuaA!5e0!3m2!1svi!2s!4v1628827294890!5m2!1svi!2s"
-              width="1200"
+              width="100%"
               height="600"
               style="border: 0"
               allowfullscreen=""
