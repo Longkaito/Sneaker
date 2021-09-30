@@ -16,11 +16,21 @@ a {
 .header-inner-nav {
   height: 8rem;
   background-color: #020202;
+}
+
+.nav-slide-down {
   position: fixed;
-  top: 0;
+  top: 0rem;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.header-inner {
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .header__nav .col {
@@ -86,6 +96,7 @@ a {
   background-color: #fff;
   border: 1px solid #ccc;
   top: 85%;
+  z-index: 2;
 }
 
 .header__nav-list-search .box-search .group-search {
@@ -184,11 +195,6 @@ a {
 .header-inner-menu {
   height: 5.3rem;
   background-color: #dcdcdc;
-  position: fixed;
-  top: 8rem;
-  left: 0;
-  right: 0;
-  z-index: 2;
 }
 
 .header__menu {
@@ -239,6 +245,7 @@ a {
   border: 2px solid #ccc;
   border-radius: 0.5rem;
   background-color: #fff;
+  z-index: 2;
 }
 
 .header__menu-list-items-level-items:hover {
@@ -261,6 +268,7 @@ a {
 }
 
 .header__banner {
+  margin: 3rem auto 0;
   overflow: hidden;
   position: relative;
   border-radius: 1rem;
@@ -755,6 +763,7 @@ a {
 }
 
 .footer__main-top p i {
+  height: 100%;
   font-size: 1.6rem;
   color: #fff;
   margin: 1rem 1rem 0 0;
@@ -767,24 +776,16 @@ a {
   margin-top: 10rem;
 }
 
-.footer__main-top .menu ul {
+.footer__main-top .address .div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.footer__main-top .menu ul li {
-  margin-right: 8rem;
-}
-
-.footer__main-top .menu ul li:nth-child(2), .footer__main-top .menu ul li:nth-child(4) {
-  margin-right: 0;
+.footer__main-top .address .div i {
+  width: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 }
 
 .footer__main-top .menu ul li a {
@@ -821,6 +822,7 @@ a {
   font-size: 1.6rem;
   padding: 1rem;
   margin-bottom: 2rem;
+  outline: none;
 }
 
 .footer__main-bottom .email button {
@@ -1042,7 +1044,7 @@ a {
 }
 
 .header__menu-female .ontop {
-  margin: 0 auto 2rem;
+  margin: 5rem auto 2rem;
 }
 
 .header__menu-female .ontop__left {

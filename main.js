@@ -38,5 +38,16 @@ setInterval(() => {
     count = 0;
     $(".header__banner .header__banner-list").style.marginLeft = `${count}%`;
   }
-}, 8000);
-// Bật tắt modal Login
+}, 6000);
+
+// control navbar
+// function controlNavbar() {
+//   const getScroll = document.querySelector("body").scrollTop;
+//   // if (getScroll > 0) {
+//   //   $(".header-inner").style.top = "-13rem";
+//   // }
+
+//   console.log(getScroll);
+// }
+
+// controlNavbar();
